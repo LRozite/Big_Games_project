@@ -2,7 +2,7 @@
 import React, { Component, Suspense } from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
-import Navbar from './views/header/Navbar';
+import Header from './views/header/Header';
 import HomePage from './views/home/home';
 import StorePage from './views/store/store';
 import Footer from './views/footer/Footer';
@@ -17,7 +17,7 @@ class App extends Component {
 
         <Suspense fallback={<h1>LOADING</h1>}>
 
-          <Navbar />
+          <Header />
 
           <Routes> 
           

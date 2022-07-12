@@ -2,10 +2,10 @@
 import React, { Component, Suspense } from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
-import './App.css';
-import Navbar from './views/header/Navbar'
+import Navbar from './views/header/Navbar';
 import HomePage from './views/home/home';
-import StorePage from './views/store/store'
+import StorePage from './views/store/store';
+import Footer from './views/footer/Footer';
 
 
 
@@ -18,7 +18,7 @@ class App extends Component {
         <Suspense fallback={<h1>LOADING</h1>}>
 
           <Navbar />
-          
+
           <Routes> 
           
             <Route exact path="/" element={ <HomePage /> } />
@@ -28,6 +28,8 @@ class App extends Component {
           </Routes>
         </Suspense>
           
+        <Footer />
+
       </BrowserRouter>
     )
   }

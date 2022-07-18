@@ -1,16 +1,23 @@
 
 import React, {Component} from 'react';
 import './home.less';
+import Herocarousel from './Herocarousel'
+import Sectioncards from './Sectioncards'
+import Aboutowner from './Aboutowner'
+import Topproducts from './Topproducts';
 
 class HomePage extends Component {
     render() {
-        
-        const randomNum = Math.random();
 
         return (
-            <div className="homeDiv">
-                Home.js offers this random number is {randomNum}
-            </div>
+            <div className="home">
+             <div>
+             <Herocarousel />
+             <Sectioncards />
+             <Aboutowner />
+             <Topproducts />
+             </div>
+             </div>
         );
     }
 }

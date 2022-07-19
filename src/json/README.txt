@@ -12,3 +12,12 @@ To generate my JSON data I used - https://www.coderstool.com/json-test-data-gene
         "score": {{float 1 10 0}} ,
         "description": "{{words 20}}"
     }
+
+"Product" presets :
+    {
+        "_prod_id": "{{uuid}}",
+        "name": "{{name}}",
+        "price": "{{price}}",
+        "score": {{float 1 10 0}} ,
+        "description": "{{words 20}}"
+    }

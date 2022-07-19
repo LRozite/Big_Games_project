@@ -33,7 +33,7 @@
                         <CategoryLink pass_path="/store/stickers" pass_text="Stickers" />
                      </Col>
                      <Col sm={12} lg={4}  className='store_cat_col'>
-                        <CategoryLink pass_path="/store/personalized-games" pass_text="Personalized Games" />
+                        <CategoryLink pass_path="/store/personalize-games" pass_text="Personalized Games" />
                      </Col>
                  </Row>
 

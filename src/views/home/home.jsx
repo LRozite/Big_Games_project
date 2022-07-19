@@ -11,13 +11,13 @@ class HomePage extends Component {
 
         return (
             <div className="home">
-             <div>
-             <Herocarousel />
-             <Sectioncards />
-             <Aboutowner />
-             <Topproducts />
-             </div>
-             </div>
+                <div>
+                    <Herocarousel />
+                    <Sectioncards />
+                    <Aboutowner />
+                    <Topproducts />
+                </div>
+            </div>
         );
     }
 }

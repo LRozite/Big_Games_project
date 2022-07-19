@@ -1,4 +1,4 @@
-import React, { useRef, useState }  from 'react';
+import React  from 'react'; //, { useRef, useState }
 import { Swiper, SwiperSlide } from "swiper/react";
 import './topproducts.less'
 import TP1 from '../../assets/domino.jpg'
@@ -35,32 +35,32 @@ function Topproducts() {
           >
         <SwiperSlide className='top__prod' >
             <div className='top__prodimg'>
-              <img src={TP1} />
+              <img src={TP1} alt="TP1" />
               </div>
                 <h5>Slide 1</h5></SwiperSlide>
         <SwiperSlide className='top__prod' >
             <div className='top__prodimg'>
-              <img src={TP2} />
+              <img src={TP2} alt="TP2" />
               </div>
                 <h5>Slide 1</h5></SwiperSlide>
                 <SwiperSlide className='top__prod' >
             <div className='top__prodimg'>
-              <img src={TP3} />
+              <img src={TP3} alt="TP3" />
               </div>
                 <h5>Slide 1</h5></SwiperSlide>
                 <SwiperSlide className='top__prod' >
             <div className='top__prodimg'>
-              <img src={TP4} />
+              <img src={TP4} alt="TP4" />
               </div>
                 <h5>Slide 1</h5></SwiperSlide>
                 <SwiperSlide className='top__prod' >
             <div className='top__prodimg'>
-              <img src={TP5} />
+              <img src={TP5} alt="TP5" />
               </div>
                 <h5>Slide 1</h5></SwiperSlide>
                 <SwiperSlide className='top__prod' >
             <div className='top__prodimg'>
-              <img src={TP6} />
+              <img src={TP6} alt="TP6" />
               </div>
                 <h5>Slide 1</h5></SwiperSlide>
           </Swiper>

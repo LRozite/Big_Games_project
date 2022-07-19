@@ -22,9 +22,15 @@ class Footer extends Component {
                             </div>
                             <div>
                                 Check out our socials
-                                <Link to="#" className='footer_link socials_link'>face</Link>
-                                <Link to="#" className='footer_link socials_link'>gram</Link>
-                                <Link to="#" className='footer_link socials_link'>tweet</Link>
+                                <Link to="#" className='footer_link socials_link'>
+                                    <i className="bi bi-facebook"></i>
+                                </Link>
+                                <Link to="#" className='footer_link socials_link'>
+                                    <i className="bi bi-instagram"></i>
+                                </Link>
+                                <Link to="#" className='footer_link socials_link'>
+                                    <i className="bi bi-twitter"></i>
+                                </Link>
                             </div>
                         </Col>
                         <Col className='footer_col'>

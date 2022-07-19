@@ -19,10 +19,12 @@ import { Pagination, Navigation } from "swiper";
 
 function Topproducts() {
       return (
-        <>
+        <section id='topproducts'>
+        <h3 className='prod__title'>TOP PRODUCTS</h3>
+        
           <Swiper
             slidesPerView={3}
-            spaceBetween={30}
+            spaceBetween={10}
             slidesPerGroup={1}
             loop={true}
             loopFillGroupWithBlank={true}
@@ -33,38 +35,59 @@ function Topproducts() {
             modules={[Pagination, Navigation]}
             className="mySwiper"
           >
+        
         <SwiperSlide className='top__prod' >
+        
             <div className='top__prodimg'>
               <img src={TP1} />
               </div>
-                <h5>Slide 1</h5></SwiperSlide>
+              <div className='tp-price__name'>
+                <h5 className='tp__name'>DOMINO</h5><h5 className='tp__price'>80&euro;</h5>
+              </div>
+                </SwiperSlide>
         <SwiperSlide className='top__prod' >
             <div className='top__prodimg'>
               <img src={TP2} />
               </div>
-                <h5>Slide 1</h5></SwiperSlide>
+              <div className='tp-price__name'>
+                <h5 className='tp__name'>CIRCUS</h5><h5 className='tp__price'>120&euro;</h5>
+              </div>
+              </SwiperSlide>
                 <SwiperSlide className='top__prod' >
             <div className='top__prodimg'>
               <img src={TP3} />
               </div>
-                <h5>Slide 1</h5></SwiperSlide>
+              <div className='tp-price__name'>
+                <h5 className='tp__name'>CHECKERS</h5><h5 className='tp__price'>120&euro;</h5>
+              </div>
+              </SwiperSlide>
                 <SwiperSlide className='top__prod' >
             <div className='top__prodimg'>
               <img src={TP4} />
               </div>
-                <h5>Slide 1</h5></SwiperSlide>
+              <div className='tp-price__name'>
+                <h5 className='tp__name'>DOMINO</h5><h5 className='tp__price'>120&euro;</h5>
+              </div>
+              </SwiperSlide>
                 <SwiperSlide className='top__prod' >
             <div className='top__prodimg'>
               <img src={TP5} />
               </div>
-                <h5>Slide 1</h5></SwiperSlide>
+              <div className='tp-price__name'>
+                <h5 className='tp__name'>JENGA</h5><h5 className='tp__price'>70&euro;</h5>
+              </div>
+              </SwiperSlide>
                 <SwiperSlide className='top__prod' >
             <div className='top__prodimg'>
               <img src={TP6} />
               </div>
-                <h5>Slide 1</h5></SwiperSlide>
+              <div className='tp-price__name'>
+                <h5 className='tp__name'>CIRCUS</h5><h5 className='tp__price'>120&euro;</h5>
+              </div>
+              </SwiperSlide>
           </Swiper>
-        </>
+          </section>
+       
       );
     }
     

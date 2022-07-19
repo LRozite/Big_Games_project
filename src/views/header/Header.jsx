@@ -25,7 +25,7 @@ class Header extends Component {
                             </Row>
                             <Row className='header_navbar'>
                                 <Col>
-                                    <Link to="#">Home</Link> <Link to="#">Store</Link> <Link to="#">Rent</Link> <Link to="#">News</Link> <Link to="#">About Us</Link> <Link to="#">Contacts</Link>
+                                    <Link to="/home">Home</Link> <Link to="/store">Store</Link> <Link to="#">Rent</Link> <Link to="#">News</Link> <Link to="#">About Us</Link> <Link to="#">Contacts</Link>
                                </Col>
                             </Row>
                         </Col>

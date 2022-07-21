@@ -5,7 +5,7 @@
 
 import React, {Component} from 'react';
 import { Link } from "react-router-dom";
-import LOGO from '../../assets/BigGames_logo.png'
+import LOGO from '../../assets/logos/BigGames_logo_medium.png'
 import './Header.less';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import FLAG from '../../assets/flags/flag-en.png'
@@ -30,7 +30,7 @@ class Header extends Component {
                     <Row>
 
                         <Col  className='header_logo'>                            
-                            <img src={LOGO} alt="" />
+                            <img src={LOGO} alt="Logo" />
                         </Col>
                         <Col xs={9} className='header_info_navbar'>
                             <Row className='header_info'>
@@ -38,7 +38,7 @@ class Header extends Component {
                             </Row>
                             <Row className='header_navbar'>
                                 <Col>
-                                    <Link to="/home">Home</Link> <Link to="/store">Store</Link> <Link to="#">Rent</Link> <Link to="#">News</Link> <Link to="#">About Us</Link> <Link to="#">Contacts</Link>
+                                    <Link to="/home">Home</Link> <Link to="/store">Store</Link> <Link to="/rent">Rent</Link> <Link to="/news">News</Link> <Link to="/about-us">About Us</Link> <Link to="/contact-us">Contacts</Link>
                                </Col>
                             </Row>
                         </Col>

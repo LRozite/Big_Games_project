@@ -10,13 +10,14 @@ import { connect } from 'react-redux'
 import { Row, Card  } from 'react-bootstrap';
 
 import './Reviews.less';
+import { PageError, PageLoading } from '../../Errors';
 
 
 
 class ReviewsComponent extends Component {
     render(){
-        if ( this.props.prop_reviews.loading ) { return <span>loading...</span> }
-        else if ( this.props.prop_reviews.error ) { return <span>{ this.props.prop_reviews.error}</span> }
+        if ( this.props.prop_reviews.loading ) { return <PageLoading /> }
+        else if ( this.props.prop_reviews.error ) { return <PageError pass_error={ this.props.prop_reviews.error} /> }
         else {
             const review_data = this.props.prop_reviews.data;
             

@@ -3,7 +3,7 @@
  * Page author - Ivars Knets
  */
 
- import React, {Component} from 'react';
+ import React from 'react';
  import { Container, Row, Col } from 'react-bootstrap';
  import { Helmet } from 'react-helmet';
  
@@ -16,37 +16,31 @@
  
 // ------------------------------------------------------------------------------- 
  
- class StoreCategoryPage extends Component {
-     render(){
+export default function StoreCategoryPage() {
  
-         return (
-             <Container id="categories" className='store_root'>
-                <Helmet><title>Store</title></Helmet>
+    return (
+        <Container id="categories" className='store_root'>
+        <Helmet><title>Store</title></Helmet>
 
-                <Row className='store_row'>   
-                    <StoreBreadcrumb />     
-                </Row>           
- 
-                 <Row id="store_categories_container" className='store_row'>
-                     <Col sm={12} lg={4} className='store_cat_col'>
-                        <CategoryLink pass_path="/store/big-games" pass_text="Big Games" />
-                     </Col>
-                     <Col sm={12} lg={4}  className='store_cat_col'>
-                        <CategoryLink pass_path="/store/stickers" pass_text="Stickers" />
-                     </Col>
-                     <Col sm={12} lg={4}  className='store_cat_col'>
-                        <CategoryLink pass_path="/store/personalize-games" pass_text="Personalized Games" />
-                     </Col>
-                 </Row>
+        <Row className='store_row'>   
+            <StoreBreadcrumb />     
+        </Row>           
 
-                 <Row id="store_reviews_container" className='store_row'>
-                        
-                 
-                     <ReviewsComponent />
-                 </Row>
-             </Container>
-         )
-     }
- }
- 
- export default StoreCategoryPage;
+            <Row id="store_categories_container" className='store_row'>
+                <Col sm={12} lg={4} className='store_cat_col'>
+                <CategoryLink pass_path="/store/big-games" pass_text="Big Games" />
+                </Col>
+                <Col sm={12} lg={4}  className='store_cat_col'>
+                <CategoryLink pass_path="/store/stickers" pass_text="Stickers" />
+                </Col>
+                <Col sm={12} lg={4}  className='store_cat_col'>
+                <CategoryLink pass_path="/store/personalize-games" pass_text="Personalized Games" />
+                </Col>
+            </Row>
+
+            <Row id="store_reviews_container" className='store_row'>
+                <ReviewsComponent />
+            </Row>
+        </Container>
+    )
+};

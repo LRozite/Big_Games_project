@@ -1,15 +1,28 @@
+/**
+ * Component author - Verners Grzibovskis
+ * 
+*/
 
 import React, {Component} from 'react';
 import { Link } from "react-router-dom";
 import LOGO from '../../assets/logos/BigGames_logo_medium.png'
 import './Header.less';
-import { Container, Row, Col } from 'react-bootstrap'; //, Button
-import FLAG from '../../assets/flag-en.png'
+import { Container, Row, Col, Button } from 'react-bootstrap';
+import FLAG from '../../assets/flags/flag-en.png'
+import LV from '../../assets/flags/latvia.png'
+import RU from '../../assets/flags/russia.png'
+import FR from '../../assets/flags/france.png'
 import CART from '../../assets/cart.png'
+
 
 
 class Header extends Component {
     render() {
+
+
+
+
+
 
         return ( 
             <div id="header_root" className='header_container'>
@@ -29,13 +42,34 @@ class Header extends Component {
                                </Col>
                             </Row>
                         </Col>
-                        <Col className='header_action'>
+                        <Col className='header_action'
+                        onMouseLeave={ (e) => {  
+                            document.getElementById("lang_list").style.display = "none";}}>
 
-                            <button className='lang_nav' ><img src={FLAG} alt="usa" /></button> <button className='cart'><img src={CART} alt="cart" /></button>
+                            <div className="main">
+                                <div className="dropdown_list">
+                                    <button className='lang_nav' id='lang-nav' onMouseEnter={ (e) => {  
+                                document.getElementById("lang_list").style.display = "block";  
+                            }}>
+                                        
+                                        <img id='lang-nav' src={FLAG} /></button> <button className='cart'><img src={CART} /></button>
+
+                                    <div  id="lang_list" className="lang_list">
+                                        <li><a className='latvia' href="/home"><img src={LV} />LV</a></li>
+                                        <li><a className='russia' href="/store"><img src={RU} />RU</a></li>
+                                        <li><a className='france' href="#"><img src={FR} />FR</a></li>
+                                    </div>
+                                </div>
+                            </div>
+
                             
                         </Col>
 
                     </Row>
+
+                    <Col>
+
+                    </Col>
                 </Container> 
 
             </div>

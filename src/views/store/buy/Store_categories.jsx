@@ -11,6 +11,8 @@
  import StoreBreadcrumb from '../components/StoreBreadcrumb/StoreBreadcrumb';
  import CategoryLink from '../components/CategoryLink/CategoryLink';
  import ReviewsComponent from '../../shared_components/reviews/Reviews';
+
+ 
  
 // ------------------------------------------------------------------------------- 
  
@@ -38,6 +40,8 @@
                  </Row>
 
                  <Row id="store_reviews_container" className='store_row'>
+                        
+                 
                      <ReviewsComponent />
                  </Row>
              </Container>

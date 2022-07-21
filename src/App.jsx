@@ -8,8 +8,10 @@ import { Helmet } from "react-helmet";
 import { RequestReviews, RequestProducts } from './redux_store/actions/actions'  
 
 
-import { Header, Footer, AboutUsPage, ContactUsPage, HomePage, NewsPage, ProductPage, RentPage, RentCategoryPage, StorePage, StoreCategoryPage } from './views';
+import { Header, Footer, AboutUsPage, ContactUsPage, HomePage, NewsPage, ProductPage, RentPage, RentCategoryPage, StorePage, StoreCategoryPage, PersonalizePage} from './views';
+
 import { PageNotFound } from './views/Errors';
+
 
 
 
@@ -45,13 +47,13 @@ class App extends Component {
             <Route exact path="/store" element={ <StoreCategoryPage /> } />
             <Route exact path='/store/big-games' element={ <StorePage /> } />
             <Route exact path='/store/stickers' element={ <StorePage /> } />
-            <Route exact path='/store/personalize-games' element={ <StorePage /> } />
+            <Route exact path='/store/personalize-games' element={ <PersonalizePage/> } />
             <Route path='/store/p/:prod_num' element={ <ProductPage /> } />
             <Route exact path="/rent" element={ <RentCategoryPage /> } />
             <Route path='/rent/:cat_name' element={ <RentPage /> } />
             <Route path='/rent/p/:prod_num' element={ <ProductPage /> } />
 
-            ProductPage
+           
             
             <Route path="*" element={ <PageNotFound /> } />
 

@@ -1,3 +1,7 @@
+/**
+ * Component author - Līga Rozīte 
+ * 
+ * */
 import React from 'react'
 import './sectioncards.less'
 import OFFR1 from '../../assets/shop_offer1.jpg'

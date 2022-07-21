@@ -13,6 +13,8 @@ import { PageError, PageLoading } from '../../Errors';
 import StoreBreadcrumb from '../components/StoreBreadcrumb/StoreBreadcrumb';
 import ProductLink from '../components/ProductLink/ProductLink';
 
+
+
 // -------------------------------------------------------------------------------
 
 class StorePage extends Component {

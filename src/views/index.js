@@ -11,7 +11,8 @@ import RentCategoryPage from './store/rent/Rent_categories';
 import StorePage from './store/buy/Store';
 import StoreCategoryPage from './store/buy/Store_categories';
 import ProductPage from './store/product/Product';
+import PersonalizePage from './store/personalize/Personalize';
 
 
 
-export { Header, Footer, AboutUsPage, ContactUsPage, HomePage, NewsPage, ProductPage, RentPage, RentCategoryPage, StorePage, StoreCategoryPage };
+export { Header, Footer, AboutUsPage, ContactUsPage, HomePage, NewsPage, ProductPage, RentPage, RentCategoryPage, StorePage, StoreCategoryPage, PersonalizePage};

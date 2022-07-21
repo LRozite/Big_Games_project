@@ -1,3 +1,7 @@
+/**
+ * Component author - Līga Rozīte 
+ * 
+ * */
 import React from 'react'
 import './aboutowner.less'
 import LND from '../../assets/owner.jpg'

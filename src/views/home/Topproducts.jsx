@@ -1,3 +1,7 @@
+/**
+ * Component author - Līga Rozīte 
+ * 
+ * */
 import React  from 'react'; //, { useRef, useState }
 import { Swiper, SwiperSlide } from "swiper/react";
 import './topproducts.less'

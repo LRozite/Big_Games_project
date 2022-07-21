@@ -1,3 +1,7 @@
+/**
+ * Component author - Līga Rozīte 
+ * 
+ * */
 import React from 'react'
 import './herocarousel.less'
 import Carousel from 'react-bootstrap/Carousel';

@@ -1,7 +1,16 @@
+/**
+ * Component author - Verners Grzibovskis
+ * 
+*/
 
 import React, {Component} from 'react';
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from 'react-bootstrap';
+import VISA from '../../assets/payments/visa.jpeg';
+import CITADELE from '../../assets/payments/citadele.jpeg';
+import SEB from '../../assets/payments/seb.png';
+import SWEDBANK from '../../assets/payments/swedbank.png';
+
 
 import './Footer.less';
 
@@ -16,15 +25,16 @@ class Footer extends Component {
                     
                     <Row>
                         <Col className='footer_col'>                            
-                            <div>
+                            <div className='newsletter'>
                                 <span>News letter sing-up.</span><br/>
-                                The input goes here.
+                                <input type='email' placeholder='Enter your email'/>
+                                <button>Subscribe</button>
                             </div>
-                            <div>
-                                Check out our socials
-                                <Link to="#" className='footer_link socials_link'>face</Link>
-                                <Link to="#" className='footer_link socials_link'>gram</Link>
-                                <Link to="#" className='footer_link socials_link'>tweet</Link>
+                            <div className='social_bar'>
+                                <p>Check out our socials</p>
+                                <Link to="#" className='footer_link socials_link'><i className="bi bi-facebook"></i></Link>
+                                <Link to="#" className='footer_link socials_link'><i class="bi bi-instagram"></i></Link>
+                                <Link to="#" className='footer_link socials_link'><i class="bi bi-twitter"></i></Link>
                             </div>
                         </Col>
                         <Col className='footer_col'>
@@ -52,7 +62,14 @@ class Footer extends Component {
                     </Row>
                     <Row id="footer_extras" className="">
                         <Col>© BigGames 2022, Fantastic4 All rights reserved.</Col>
-                        <Col>List of supported payment methods</Col>
+                        <Col>
+                            <ul className='footer_payment_list'>
+                                <li><Link to="#" className='visa'><img src={VISA} /></Link></li>
+                                <li><Link to="#" className='citadele'><img src={CITADELE} /></Link></li>
+                                <li><Link to="#" className='seb'><img src={SEB} /></Link></li>
+                                <li><Link to="#" className='swedbank'><img src={SWEDBANK} /></Link></li>
+                            </ul>
+                        </Col>
                         <Col>
                             <Link to="#" className='footer_link'>Cookie policies</Link> | <Link to="#" className='footer_link'>Privacy policies</Link> | <Link to="#" className='footer_link'>General regulations</Link>
                         </Col>

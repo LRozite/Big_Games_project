@@ -20,7 +20,7 @@
          return (
              <Container id="categories" className='store_root'>
                 <Helmet><title>Store</title></Helmet>
-                <StoreBreadcrumb pass_pathname={window.location.pathname} />
+                <StoreBreadcrumb />
                 
  
                  <Row id="store_categories_container" className='store_row'>

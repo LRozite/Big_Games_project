@@ -30,7 +30,7 @@ class RentPage extends Component {
             <Container id="rent_shelf" className='store_root'>
                 <Helmet><title>Store</title></Helmet>
 
-                <StoreBreadcrumb pass_pathname={window.location.pathname} />
+                <StoreBreadcrumb />
 
                 <Row id="products_container" className='store_row'>
 

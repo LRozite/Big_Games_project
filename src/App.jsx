@@ -42,16 +42,15 @@ class App extends Component {
             <Route exact path="/about-us" element={ <AboutUsPage /> } />
             <Route exact path="/contact-us" element={ <ContactUsPage /> } />
 
-            <Route exact path="/store" element={ <StoreCategoryPage /> } />
+            <Route exact path="/store" element={ <StoreCategoryPage /> } ></Route>
             <Route exact path='/store/big-games' element={ <StorePage /> } />
+            <Route path='/store/big-games/:prod_num' element={ <ProductPage /> } />
             <Route exact path='/store/stickers' element={ <StorePage /> } />
             <Route exact path='/store/personalize-games' element={ <StorePage /> } />
-            <Route path='/store/p/:prod_num' element={ <ProductPage /> } />
             <Route exact path="/rent" element={ <RentCategoryPage /> } />
-            <Route path='/rent/:cat_name' element={ <RentPage /> } />
+            <Route exact path='/rent/games' element={ <RentPage /> } />
+            <Route exact path='/rent/party-supplies' element={ <RentPage /> } />
             <Route path='/rent/p/:prod_num' element={ <ProductPage /> } />
-
-            ProductPage
             
             <Route path="*" element={ <PageNotFound /> } />
 
